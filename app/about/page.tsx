@@ -13,7 +13,10 @@ export default function Page() {
   return (
     <>
       <AuthorLayout content={mainContent}>
-        <MDXLayoutRenderer code={author.body.code} />
+        <div>
+          {/* <MDXLayoutRenderer code={author.body.code} /> */}
+          Yeweirui is a Frontend Developer for Full Stack SDE at Security company.
+        </div>
       </AuthorLayout>
     </>
   )
