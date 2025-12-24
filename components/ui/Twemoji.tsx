@@ -1,5 +1,5 @@
-import clsx from 'clsx';
-import { cva, type VariantProps } from 'class-variance-authority';
+import clsx from 'clsx'
+import { cva, type VariantProps } from 'class-variance-authority'
 
 const variants = cva('twa inline-block', {
   variants: {
@@ -15,15 +15,15 @@ const variants = cva('twa inline-block', {
   defaultVariants: {
     size: 'lg',
   },
-});
+})
 
 interface TwemojiProps extends VariantProps<typeof variants> {
-  emoji: string;
-  className?: string;
+  emoji: string
+  className?: string
 }
 
 const Twemoji = ({ emoji, size, className }: TwemojiProps) => (
   <i className={clsx(clsx(variants({ size }), `twa-${emoji}`), className)} />
-);
+)
 
-export default Twemoji;
+export default Twemoji

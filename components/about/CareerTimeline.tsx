@@ -2,7 +2,7 @@ import TimelineItem from './TimelineItem'
 
 export const EXPERIENCES = [
   {
-    org: 'Db Security',
+    org: '德邦证券股份有限公司',
     url: 'https://www.tebon.com.cn/main/index.html',
     logo: '/static/images/experiences/tebon-logo.png',
     start: 'July 2022',

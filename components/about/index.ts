@@ -1,4 +1,4 @@
-import TimelineItem from './TimelineItem';
-import CareerTimeline from './CareerTimeline';
+import TimelineItem from './TimelineItem'
+import CareerTimeline from './CareerTimeline'
 
-export { TimelineItem, CareerTimeline };
+export { TimelineItem, CareerTimeline }
