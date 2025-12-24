@@ -2,6 +2,8 @@ import { ReactNode } from 'react'
 import type { Authors } from 'contentlayer/generated'
 import SocialIcon from '@/components/social-icons'
 import Image from '@/components/Image'
+import { Twemoji, Button } from '@/components/ui'
+import { CareerTimeline } from '@/components/about'
 
 interface Props {
   children: ReactNode
@@ -40,6 +42,35 @@ export default function AuthorLayout({ children, content }: Props) {
               {/* <SocialIcon kind="x" href={twitter} /> */}
               {/* <SocialIcon kind="bluesky" href={bluesky} /> */}
             </div>
+          </div>
+          <div className="prose dark:prose-invert max-w-none pt-8 pb-8 xl:col-span-2">
+            <h2>
+              Hello, folks! <Twemoji className="mx-2" emoji="waving-hand" /> Friends!
+            </h2>
+            {children}
+            <p>
+              I have a passion for <strong>JavaScript/TypeScript/Vue/React/Next</strong> I work
+              mainly frontend engineer at <strong>Db security</strong> base ShangHai
+            </p>
+            <h2>Why have this blog?</h2>
+            <blockquote>
+              <p>
+                My desire to practice my skills and share my acquired knowledge fuels my endeavors.
+              </p>
+            </blockquote>
+            <p>
+              I would greatly appreciate your thoughts and comments on what I have written{' '}
+              <Twemoji emoji="clinking-beer-mugs" />.
+            </p>
+            <div className="flex items-center justify-between">
+              <h2>My Career</h2>
+
+              <Button as="a" href="https://resume.yeweiwei.top/" target="_blank">
+                <span>Resume</span>
+                <Twemoji emoji="page-facing-up" />
+              </Button>
+            </div>
+            <CareerTimeline />
           </div>
         </div>
       </div>
